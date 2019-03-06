@@ -1,28 +1,31 @@
 import React from 'react';
-import Api from '../../services/api';
+import { connect } from 'react-redux';
 
 class App extends React.Component {
+
   constructor(props) {
     super(props);
-    this.state = {
-      brands: [],
-    };
   }
 
   componentDidMount() {
-    const data = await Api.featchBrands();
-    console.log(data);
-    this.setState({ brands: data });
-    console.log(this.state.brands);
+    this.props.fetchBrands();
   }
 
   render() {
     return (
       <div className="App">
-        {JSON.stringify(this.state.brands)}
+        {JSON.stringify(this.props.brands)}
       </div>
     );
   }
 }
 
-export default App;
+const mapStateToProps = state => ({
+  brands: state.brand.brands,
+});
+
+const mapDispachToProp = dispatch => ({
+  fetchBrands: dispatch.brand.fetchBrands,
+});
+
+export default connect(mapStateToProps, mapDispachToProp)(App);
