@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Header from '../Header';
+import CardPrincipal from '../CardPrincipal';
+import './App.css';
 
 class App extends React.Component {
 
@@ -13,8 +15,8 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <div className="columns">
-          <div className="column is-5 is-offset-3">
-            {JSON.stringify(this.props.brands)}
+          <div className="column is-5 is-offset-3" id="cardPrincipal">
+            <CardPrincipal />
           </div>
           <div className="column">Auto</div>
         </div>
