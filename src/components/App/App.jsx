@@ -1,11 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import Header from '../Header';
 
 class App extends React.Component {
-
-  constructor(props) {
-    super(props);
-  }
 
   componentDidMount() {
     this.props.fetchBrands();
@@ -14,7 +11,13 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        {JSON.stringify(this.props.brands)}
+        <Header />
+        <div className="columns">
+          <div className="column is-5 is-offset-3">
+            {JSON.stringify(this.props.brands)}
+          </div>
+          <div className="column">Auto</div>
+        </div>
       </div>
     );
   }
