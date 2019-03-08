@@ -1,7 +1,7 @@
-.cardHistoryMedia{
+.cardSuggetionMedia{
     margin-top: 15px;
 }
-.cardHistory{
+.cardSuggetion{
     margin-top: 20px;
     height: 240px;
     max-height: 250px;
@@ -16,6 +16,6 @@
     margin-top: 15px;
     margin-left: 10px;
 }
-#titleHistorys{
+#titleSuggetions{
     max-height: 50px;
 }
