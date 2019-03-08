@@ -1,0 +1,17 @@
+.iconComment{
+    margin-left: 15px;
+    float: left;
+}
+.iconComment:first-child{
+    margin-left: 0px;
+}
+.iconCommentRight{
+    float: right;
+    margin-right: 10px;
+}
+#commentContainer{
+    padding: 1rem;
+}
+#contentCommentsContainer{
+    margin-top: 35px;
+}

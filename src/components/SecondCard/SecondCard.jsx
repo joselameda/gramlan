@@ -1,6 +1,6 @@
 import React from 'react';
 import UserInfo from '../UserInfo';
-import Historys from  '../Historys';
+import Histories from  '../Histories';
 import Suggestions from  '../Suggestions';
 
 const SecondCard = () => (
@@ -9,7 +9,7 @@ const SecondCard = () => (
       <UserInfo />
     </div>
     <div>
-      <Historys />
+      <Histories />
     </div>
     <div>
       <Suggestions />

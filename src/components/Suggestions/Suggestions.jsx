@@ -1,14 +1,9 @@
 import React from 'react';
 import UserInfo from '../UserInfo';
+import ContainerInfo from '../ContainerInfo';
 import './Suggetions.css';
 
-const Suggestions = () => (
-  <div className="card cardSuggetion">
-    <div className="card-header is-fixed-top" id="titleSuggetions">
-      <p className="title is-size-7" id="Suggetions">Suggetions</p>
-      <p className="title is-size-7" id="seeAll">Ver todas</p>
-    </div>
-
+const userSuggestions = () =>(
     <div className="card-content">
       <div className="media-content cardSuggetionMedia">
         <UserInfo />
@@ -26,7 +21,10 @@ const Suggestions = () => (
         <UserInfo />
       </div>
     </div>
-  </div>
+);
+
+const Suggestions = () => (
+  <ContainerInfo title="Suggestions" userInfo={userSuggestions()} />
 );
 
 export default Suggestions;

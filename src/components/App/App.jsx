@@ -18,6 +18,7 @@ class App extends React.Component {
         <div className="columns" id="columns">
           <div className="column is-5 is-offset-3" id="cardPrincipal">
             <CardPrincipal />
+            <CardPrincipal />
           </div>
           <div className="column is-2">
             <SecondCard />

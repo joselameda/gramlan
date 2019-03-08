@@ -4,3 +4,6 @@
 #infoDiv{
     margin-top: 8px;
 }
+#cardPrincipal:not(:first-child){
+    margin-top: 80px;
+}

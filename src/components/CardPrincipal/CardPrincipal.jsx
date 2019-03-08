@@ -1,42 +1,21 @@
 import React from 'react';
 import Yo from '../../assets/image/yo.png';
 import UserInfo from '../UserInfo';
+import Comments from '../Comments';
 import './CardPrincipal.css';
 const CardPrincipal = () => (
-  <div className="card">
+  <div className="card" id="cardPrincipal">
     <div className="card-header">
       <UserInfo />
     </div>
-    <div className="card-image">
+    <div className="card-image" id="comments">
       <figure className="image is-3by2">
         <img src={Yo} alt="Placeholder image" />
       </figure>
     </div>
-    <div className="card-content">
-      <div className="media">
-        <div className="media-left">
-          <figure className="image is-48x48">
-            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
-          </figure>
-        </div>
-        <div className="media-content">
-          <p className="title is-4">Joseph Lameda</p>
-          <p className="subtitle is-6">@joseph_lameda</p>
-        </div>
-      </div>
-
-      <div className="content">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Phasellus nec iaculis mauris.
-        {' '}
-        <a>@bulmaio</a>
-.
-        <a href="#">#css</a>
-        {' '}
-        <a href="#">#responsive</a>
-        <br />
-        <time dateTime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-      </div>
+    <Comments />
+    <div className="card-footer">
+      <input className="input" type="text" placeholder="Insert coment...." />
     </div>
   </div>
 );
