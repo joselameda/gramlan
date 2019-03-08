@@ -1,18 +1,11 @@
 import React from 'react';
 import Yo from '../../assets/image/yo.png';
+import UserInfo from '../UserInfo';
 import './CardPrincipal.css';
 const CardPrincipal = () => (
   <div className="card">
     <div className="card-header">
-      <div className="media-left">
-        <figure className="image is-48x48">
-          <img className="is-rounded" src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
-        </figure>
-      </div>
-      <div className="media-content" >
-        <p className="title is-7">Joseph Lameda</p>
-        <p className="subtitle is-7">@joseph_lameda</p>
-      </div>
+      <UserInfo />
     </div>
     <div className="card-image">
       <figure className="image is-3by2">
