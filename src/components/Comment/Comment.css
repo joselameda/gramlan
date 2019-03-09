@@ -4,8 +4,10 @@
 
 #comment:not(:first-child){
     float: left;
-    margin-top: 10px;
 }
 #comment{
     float: left;
+}
+#divComment{
+    min-height: 30px;
 }
