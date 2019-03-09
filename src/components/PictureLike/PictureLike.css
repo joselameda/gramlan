@@ -1,0 +1,18 @@
+#firtPictureLike{
+    float: left;
+    position: absolute;
+}
+#secondPictureLike{
+    float: left;
+    position: absolute;
+    margin-left: 12px;
+}
+#thirdPictureLike{
+    float: left;
+    position: absolute;
+    margin-left: 24px;
+}
+#pictureLikeDiv{
+    position: absolute;
+    margin-top: 4px;
+}

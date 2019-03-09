@@ -1,8 +1,9 @@
 import React from 'react';
 import Yo from '../../assets/image/yo.png';
 import UserInfo from '../UserInfo';
-import Comments from '../Comments';
+import CommentContainer from '../CommentsContainer';
 import './CardPrincipal.css';
+
 const CardPrincipal = () => (
   <div className="card" id="cardPrincipal">
     <div className="card-header">
@@ -13,7 +14,7 @@ const CardPrincipal = () => (
         <img src={Yo} alt="Placeholder image" />
       </figure>
     </div>
-    <Comments />
+    <CommentContainer />
     <div className="card-footer">
       <input className="input" type="text" placeholder="Insert coment...." />
     </div>

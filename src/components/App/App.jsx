@@ -20,7 +20,7 @@ class App extends React.Component {
             <CardPrincipal />
             <CardPrincipal />
           </div>
-          <div className="column is-2">
+          <div className="column is-2 is-fixed-top" id="secondCard">
             <SecondCard />
           </div>
         </div>
