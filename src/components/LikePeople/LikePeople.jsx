@@ -5,7 +5,7 @@ import './LikePeople.css';
 const LikePeople = () => (
   <div>
     <PictureLike />
-    <p id="titlePeople">
+    <p id="titlePeopleLiked">
       Les gusta a vicenttmusic y 21,415 personas más
     </p>
   </div>

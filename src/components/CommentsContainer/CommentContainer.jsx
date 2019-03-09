@@ -4,6 +4,7 @@ import LikeIcon from '../../assets/image/iLikeInstagram.png';
 import Upload from '../../assets/image/upload.png';
 import Save from '../../assets/image/save.png';
 import LikePeople from '../LikePeople';
+import CommentsPeople from '../CommentsPeople';
 import './CommentContainer.css';
 
 const CommentContainer = () => (
@@ -42,6 +43,7 @@ const CommentContainer = () => (
         -
       </p>
     </div>
+    <CommentsPeople />
   </div>
 );
 
