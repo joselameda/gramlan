@@ -1,5 +1,5 @@
 import React from 'react';
-import Yo from '../../assets/image/yo.png';
+import Yo from '../../../assets/image/yo.png';
 import './PictureLike.css';
 
 const PictureLike = () => (

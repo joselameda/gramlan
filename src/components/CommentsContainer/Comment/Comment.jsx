@@ -1,5 +1,5 @@
 import React from 'react';
-import LikeIcon from '../../assets/image/iLikeInstagram.png';
+import LikeIcon from '../../../assets/image/iLikeInstagram.png';
 import './Comment.css';
 
 const

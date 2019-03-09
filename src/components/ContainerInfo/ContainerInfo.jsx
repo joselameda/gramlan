@@ -1,7 +1,6 @@
 import React from 'react';
 
 const ContainerInfo = ({title, userInfo}) => {
-  console.log(userInfo);
   return (
     <div className="card cardHistory">
       <div className="card-header is-fixed-top" id="titleHistories">

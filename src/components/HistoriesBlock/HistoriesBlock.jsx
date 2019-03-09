@@ -1,7 +1,7 @@
 import React from 'react';
 import UserInfo from '../UserInfo';
 import ContainerInfo from '../ContainerInfo';
-import './Histories.css';
+import './HistoriesBlock.css';
 
 const userHistories = () => (
   <div className="card-content">
@@ -22,8 +22,8 @@ const userHistories = () => (
     </div>
   </div>
 );
-const Histories = () => (
+const HistoriesBlock = () => (
   <ContainerInfo title="Histories" userInfo={userHistories()} />
 );
 
-export default Histories;
+export default HistoriesBlock;

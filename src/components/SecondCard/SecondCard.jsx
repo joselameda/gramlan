@@ -1,6 +1,6 @@
 import React from 'react';
 import UserInfo from '../UserInfo';
-import Histories from  '../Histories';
+import Histories from '../HistoriesBlock';
 import Suggestions from  '../Suggestions';
 
 const SecondCard = () => (
