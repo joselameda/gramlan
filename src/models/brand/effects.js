@@ -6,6 +6,6 @@ const effects = {
     const brands = await api.fetchBrands();
     this.setBrands(brands);
   },
-}
+};
 
 export default effects;

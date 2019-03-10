@@ -1,10 +1,11 @@
 import axios from 'axios';
 import { apiUrl } from '../config/paths';
+import { userInfo } from '../mockData';
 
 class Api {
   static async fetchBrands() {
-    const response = await axios.get(`${apiUrl}/brands`);
-    return response.data.data;
+    const response = await userInfo;
+    return response.data;
   }
 }
 

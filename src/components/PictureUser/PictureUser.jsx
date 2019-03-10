@@ -1,7 +1,7 @@
 import React from 'react';
 import Yo from '../../assets/image/yo.png';
 
-const PictureUser = () => (
+const PictureUser = ({pic_url }) => (
   <figure className="image is-48x48" id="imgUser">
     <img className="is-rounded" src={Yo} />
   </figure>

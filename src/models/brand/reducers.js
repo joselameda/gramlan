@@ -6,4 +6,4 @@ export const reducers = {
   setBrands(state, brands) {
     return { ...state, brands };
   },
-}
+};

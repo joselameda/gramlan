@@ -1,5 +1,6 @@
 import React from 'react';
 import './UserInfo.css';
+import { connect } from 'react-redux';
 import PictureUser from '../PictureUser';
 
 const UserInfo = () => (
@@ -15,3 +16,4 @@ const UserInfo = () => (
 );
 
 export default UserInfo;
+
