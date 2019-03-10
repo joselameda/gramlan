@@ -4,7 +4,7 @@ import ContainerInfo from '../ContainerInfo';
 import './HistoriesBlock.css';
 
 const userHistories = () => (
-  <div className="card-content">
+  <div className="card-content" id="historyBlock">
     <div className="media-content cardHistoryMedia">
       <UserInfo />
     </div>

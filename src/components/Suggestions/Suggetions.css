@@ -20,3 +20,6 @@
 #titleSuggetions{
     max-height: 50px;
 }
+#suggetionsBlock{
+    padding-top: 0;
+}

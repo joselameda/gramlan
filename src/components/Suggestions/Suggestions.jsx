@@ -4,7 +4,7 @@ import ContainerInfo from '../ContainerInfo';
 import './Suggetions.css';
 
 const userSuggestions = () =>(
-    <div className="card-content">
+    <div className="card-content" id="suggetionsBlock">
       <div className="media-content cardSuggetionMedia">
         <UserInfo />
       </div>
