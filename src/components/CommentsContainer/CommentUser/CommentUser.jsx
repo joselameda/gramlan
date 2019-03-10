@@ -1,11 +1,14 @@
 import React from 'react';
 import LikePeople from '../LikePeople';
+import './CommentUser.css';
 
 const CommentUser = () => (
   <div className="content" id="contentCommentsContainer">
     <LikePeople />
     <p id="commentUser">
-      jguaido
+      <strong>
+        jguaido
+      </strong>
       ¡Más de 20 horas, todo el territorio nacional sin luz!
       <br />
       El usurpador insiste en gobernar un país que hace años se le fue de las manos.

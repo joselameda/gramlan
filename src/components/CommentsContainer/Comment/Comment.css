@@ -1,13 +1,15 @@
 #iconLikeComment{
     float: right;
-}
-
-#comment:not(:first-child){
-    float: left;
+    width: 17px;
 }
 #comment{
     float: left;
+    font-size: 13px;
 }
 #divComment{
     min-height: 30px;
+}
+#userOwnerComment{
+    margin-right: 5px;
+    font-size: 13px;
 }

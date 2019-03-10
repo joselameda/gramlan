@@ -6,6 +6,11 @@ const
   Comment = () => (
   <div id="divComment">
     <p id="comment">
+      <span id="userOwnerComment">
+        <strong>
+          joseph_lameda
+        </strong>
+      </span>
       Esto es un comentario!
     </p>
     <span id="iconLikeComment">
