@@ -2,16 +2,19 @@ import React from 'react';
 import Comment from '../Comment';
 import './CommentsPeople.css';
 
-const CommentsPeople = () => (
-  <div>
-    <p id="seeMoreComment">
-      See the 5 comments
-    </p>
-    <Comment />
-    <Comment />
-    <Comment />
+const CommentsPeople = ({comments}) => {
+  const commentsBlock = comments.map(comment => (
+    <Comment user={comment.user} comment={comment.comment} />
+  ));
+  return (
+    <div>
+      <p id="seeMoreComment">
+        See the 5 comments
+      </p>
+      {commentsBlock}
 
-  </div>
-);
+    </div>
+  );
+}
 
 export default CommentsPeople;

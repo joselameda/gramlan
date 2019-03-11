@@ -7,30 +7,30 @@ import CommentsPeople from './CommentsPeople';
 import CommentUser from './CommentUser';
 import './CommentContainer.css';
 
-const CommentContainer = () => (
-  <div className="card-content" id="commentContainer">
-    <div id="iconContainer">
-      <div className="media-left">
-        <figure className="image iconComment">
-          <img src={LikeIcon} alt="Placeholder image" />
-        </figure>
-        <figure className="image iconComment ">
-          <img src={CommentIcon} alt="Placeholder image" />
-        </figure>
-        <figure className="image iconComment is-24x24">
-          <img src={Upload} alt="Placeholder image" />
-        </figure>
+const CommentContainer = ({comment, comments}) => (
+    <div className="card-content" id="commentContainer">
+      <div id="iconContainer">
+        <div className="media-left">
+          <figure className="image iconComment">
+            <img src={LikeIcon} alt="Placeholder image" />
+          </figure>
+          <figure className="image iconComment ">
+            <img src={CommentIcon} alt="Placeholder image" />
+          </figure>
+          <figure className="image iconComment is-24x24">
+            <img src={Upload} alt="Placeholder image" />
+          </figure>
+        </div>
+        <div className="media-right is-24x24">
+          <figure className="image iconCommentRight">
+            <img src={Save} alt="Placeholder image" />
+          </figure>
+        </div>
       </div>
-      <div className="media-right is-24x24">
-        <figure className="image iconCommentRight">
-          <img src={Save} alt="Placeholder image" />
-        </figure>
-      </div>
-    </div>
 
-    <CommentUser />
-    <CommentsPeople />
-  </div>
-);
+      <CommentUser comment={comment} />
+      <CommentsPeople comments={comments} />
+    </div>
+  )
 
 export default CommentContainer;

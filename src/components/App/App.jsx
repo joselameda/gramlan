@@ -6,20 +6,30 @@ import SecondCard from '../SecondCard';
 import './App.css';
 
 class App extends React.Component {
-
   componentDidMount() {
-    this.props.fetchBrands();
+    this.props.fetchUser();
   }
 
   render() {
-    console.log(this.props);
+    const {
+      name, nickName, profilePicUrl, cards, followed
+    } = this.props.user;
+    const cardsBlock = (
+      !name || !cards
+    ) ? null : cards.map(card => (
+      <CardPrincipal
+        card={card}
+        name={name}
+        nickName={nickName}
+        profilePicUrl={profilePicUrl}
+      />
+      ));
     return (
       <div className="App">
         <Header />
         <div className="columns" id="columns">
           <div className="column is-5 is-offset-3" id="cardPrincipal">
-            <CardPrincipal />
-            <CardPrincipal />
+            {cardsBlock}
           </div>
           <div className="column is-2 is-fixed-top" id="secondCard">
             <SecondCard />
@@ -29,13 +39,12 @@ class App extends React.Component {
     );
   }
 }
-
-const mapStateToProps = state => ({
-  brands: state.brand.brands,
+const mapStateToProp = state => ({
+  user: state.user.user,
 });
 
 const mapDispachToProp = dispatch => ({
-  fetchBrands: dispatch.brand.fetchBrands,
+  fetchUser: dispatch.user.fetchUser,
 });
 
-export default connect(mapStateToProps, mapDispachToProp)(App);
+export default connect(mapStateToProp, mapDispachToProp)(App);

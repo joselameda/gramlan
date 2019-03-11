@@ -1,7 +1,7 @@
-import brand from './brand';
+import user from './user';
 
 const models = {
-  brand,
+  user,
 }
 
 export default models;

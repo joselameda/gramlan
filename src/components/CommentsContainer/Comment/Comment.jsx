@@ -3,15 +3,15 @@ import LikeIcon from '../../../assets/image/iLikeInstagram.png';
 import './Comment.css';
 
 const
-  Comment = () => (
+  Comment = ({user, comment}) => (
   <div id="divComment">
     <p id="comment">
       <span id="userOwnerComment">
         <strong>
-          joseph_lameda
+          {user}
         </strong>
       </span>
-      Esto es un comentario!
+      {comment}
     </p>
     <span id="iconLikeComment">
       <img src={LikeIcon} alt="" />

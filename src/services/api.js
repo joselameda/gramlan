@@ -3,7 +3,7 @@ import { apiUrl } from '../config/paths';
 import { userInfo } from '../mockData';
 
 class Api {
-  static async fetchBrands() {
+  static async fetchUser() {
     const response = await userInfo;
     return response.data;
   }
