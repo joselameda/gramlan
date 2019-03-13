@@ -6,19 +6,19 @@ import './HistoriesBlock.css';
 const userHistories = () => (
   <div className="card-content" id="historyBlock">
     <div className="media-content cardHistoryMedia">
-      <UserInfo />
+      <UserInfo name='jose' nickName='joseph_lameda'  />
     </div>
     <div className="media-content cardHistoryMedia">
-      <UserInfo />
+      <UserInfo name='jose' nickName='joseph_lameda'  />
     </div>
     <div className="media-content cardHistoryMedia">
-      <UserInfo />
+      <UserInfo name='jose' nickName='joseph_lameda'  />
     </div>
     <div className="media-content cardHistoryMedia">
-      <UserInfo />
+      <UserInfo name='jose' nickName='joseph_lameda'  />
     </div>
     <div className="media-content cardHistoryMedia">
-      <UserInfo />
+      <UserInfo name='jose' nickName='joseph_lameda'  />
     </div>
   </div>
 );
