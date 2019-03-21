@@ -12,11 +12,12 @@ class App extends React.Component {
 
   render() {
     const {
-      name, nickName, profilePicUrl, cards, followed
+      name, nickName, profilePicUrl, cards, followers,
     } = this.props.user;
+
     const cardsBlock = (
       !name || !cards
-    ) ? null : cards.map(card => (
+    ) ? [] : cards.map(card => (
       <CardPrincipal
         card={card}
         name={name}
@@ -24,12 +25,30 @@ class App extends React.Component {
         profilePicUrl={profilePicUrl}
       />
       ));
+
+    let cardsFollowed = [];
+
+    if (followers) {
+      cardsFollowed = followers.map(follower => (
+        follower.cards.map(card => (
+          <CardPrincipal
+            card={card}
+            name={follower.user}
+            nickName={follower.nickName}
+            profilePicUrl={follower.profilePicUrl}
+          />
+        ))
+      ));
+    }
+
+    const totalCards = [...cardsBlock, ...cardsFollowed];
+
     return (
       <div className="App">
         <Header />
         <div className="columns" id="columns">
           <div className="column is-5 is-offset-3" id="cardPrincipal">
-            {cardsBlock}
+            {totalCards}
           </div>
           <div className="column is-2 is-fixed-top" id="secondCard">
             <SecondCard />

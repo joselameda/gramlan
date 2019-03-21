@@ -4,10 +4,11 @@ export const userInfo = {
       name: 'Joseph Lameda',
       profilePicUrl: '../../assets/image/yo.png',
       nickName: '@joseph_lameda',
-      followed: [
+      followers: [
         {
           user: 'will_smith',
           profilePicUrl: '../../assets/image/yo.png',
+          nickName: '@will_smith',
           cards: [
             {
               pictureUrl: 'https://media-cdn.tripadvisor.com/media/photo-s/14/e5/e3/6b/carajillo.jpg',
