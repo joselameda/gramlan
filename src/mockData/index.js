@@ -30,6 +30,56 @@ export const userInfo = {
             },
           ],
         },
+        {
+          user: 'will_smith',
+          profilePicUrl: '../../assets/image/yo.png',
+          nickName: '@will_smith',
+          cards: [
+            {
+              pictureUrl: 'https://media-cdn.tripadvisor.com/media/photo-s/14/e5/e3/6b/carajillo.jpg',
+              commentUser: 'Excelentes carnes tengo hambre.',
+              comments: [
+                {
+                  user: 'joseph_lameda',
+                  comment: 'esto es un comentario',
+                },
+                {
+                  user: 'jguaido',
+                  comment: 'Cese a la usurpacion, gobierno de transicion y elecciones libres',
+                },
+                {
+                  user: 'michelle_lewin',
+                  comment: 'Yo como eso todos los dias',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          user: 'leo jimenez',
+          profilePicUrl: 'https://media-cdn.tripadvisor.com/media/photo-s/14/e5/e3/6b/carajillo.jpg',
+          nickName: '@leo_jimenez',
+          cards: [
+            {
+              pictureUrl: 'https://media-cdn.tripadvisor.com/media/photo-s/14/e5/e3/6b/carajillo.jpg',
+              commentUser: 'Excelentes carnes tengo hambre.',
+              comments: [
+                {
+                  user: 'joseph_lameda',
+                  comment: 'esto es un comentario',
+                },
+                {
+                  user: 'jguaido',
+                  comment: 'Cese a la usurpacion, gobierno de transicion y elecciones libres',
+                },
+                {
+                  user: 'michelle_lewin',
+                  comment: 'Yo como eso todos los dias',
+                },
+              ],
+            },
+          ],
+        },
       ],
       cards: [
         {

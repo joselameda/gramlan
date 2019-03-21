@@ -6,7 +6,7 @@ import PictureUser from '../PictureUser';
 const UserInfo = ({ profilePicUrl, name, nickName }) => (
   <div id="userInfoParent">
     <div className="media-left">
-      <PictureUser pic_url={profilePicUrl} />
+      <PictureUser picUrl={profilePicUrl} />
     </div>
     <div className="media-content" id="nameUser">
       <p className="title is-size-7">{name}</p>
